@@ -74,11 +74,11 @@
 
         nav {
             bindings = <
-&kp F1  &kp F2  &kp F3          &kp F4          &kp F5           &kp F6                                     &kp F7           &kp F8          &kp F9          &kp F10          &kp F11  &kp F12
-&trans  &trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_UP                               &trans           &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &trans   &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN                             &kp HOME         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans
-&trans  &trans  &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &trans          &kp UNDER        &kp NUBS  &kp PRINTSCREEN  &trans          &trans          &trans           &trans   &trans
-                &kp PSCRN       &trans          &trans           &kp LG(SPACE)   &kp LG(SPACE)    &trans    &kp DELETE       &mo 3           &kp N0          &trans
+&kp F1                  &kp F2                   &kp F3          &kp F4          &kp F5           &kp F6                                     &kp F7           &kp F8          &kp F9          &kp F10          &kp F11  &kp F12
+&kp LG(TAB)             &trans                   &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_UP                               &trans           &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &trans   &trans
+&kp LS(LG(LEFT_ARROW))  &kp LS(LG(RIGHT_ARROW))  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN                             &kp HOME         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans
+&trans                  &trans                   &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &trans          &kp UNDER        &kp NUBS  &kp PRINTSCREEN  &trans          &trans          &trans           &trans   &trans
+                                                 &kp PSCRN       &trans          &trans           &kp LG(SPACE)   &kp LG(SPACE)    &trans    &kp DELETE       &mo 3           &kp N0          &trans
             >;
 
             display-name = "Nav";
