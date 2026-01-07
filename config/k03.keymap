@@ -64,10 +64,29 @@
 &kp TAB    &kp Q               &kp W           &kp E           &kp R             &kp T                              &kp Y     &kp U              &kp I            &kp O            &kp P           &kp LEFT_BRACKET
 &kp LCTRL  &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_WIN D  &mt LEFT_SHIFT F  &kp G                              &kp H     &mt RIGHT_SHIFT J  &mt LEFT_META K  &mt RIGHT_ALT L  &mt RCTRL SEMI  &kp SQT
 &kp LSHFT  &kp Z               &kp X           &kp C           &kp V             &kp B      &kp MINUS    &kp GRAVE  &kp N     &kp M              &kp COMMA        &kp DOT          &kp FSLH        &kp RSHFT
-                               &kp LGUI        &mo 1           &kp LCTRL         &kp SPACE  &kp SPACE    &kp ENTER  &kp BSPC  &mo 2              &kp MINUS        &kp EQUAL
+                               &kp LGUI        &mo 2           &kp LCTRL         &kp SPACE  &kp SPACE    &kp ENTER  &kp BSPC  &mo 3              &kp MINUS        &kp EQUAL
             >;
 
             display-name = "Base";
+            sensor-bindings =
+                <&enc_vol>,
+                <&enc_vol>,
+                <&enc_vol>,
+                <&enc_vol>,
+                <&enc_vol>,
+                <&enc_vol>;
+        };
+
+        game {
+            display-name = "Base";
+            bindings = <
+&kp ESC    &kp N1  &kp N2    &kp N3  &kp N4     &kp N5                             &kp N6    &kp N7  &kp N8     &kp N9     &kp N0    &kp RIGHT_BRACKET
+&kp TAB    &kp Q   &kp W     &kp E   &kp R      &kp T                              &kp Y     &kp U   &kp I      &kp O      &kp P     &kp LEFT_BRACKET
+&kp LCTRL  &kp A   &kp S     &kp D   &kp F      &kp G                              &kp H     &kp J   &kp K      &kp L      &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z   &kp X     &kp C   &kp V      &kp B      &kp MINUS    &kp GRAVE  &kp N     &kp M   &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
+                   &kp LGUI  &mo 2   &kp LCTRL  &kp SPACE  &kp SPACE    &kp ENTER  &kp BSPC  &mo 3   &kp MINUS  &kp EQUAL
+            >;
+
             sensor-bindings =
                 <&enc_vol>,
                 <&enc_vol>,
@@ -83,7 +102,7 @@
 &kp LG(TAB)             &trans                   &mkp LCLK               &mmv MOVE_UP     &mkp RCLK                &msc SCRL_UP                               &trans           &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &trans   &trans
 &kp LG(LC(LEFT_ARROW))  &kp LG(LC(RIGHT_ARROW))  &mmv MOVE_LEFT          &mmv MOVE_DOWN   &mmv MOVE_RIGHT          &msc SCRL_DOWN                             &kp HOME         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans
 &trans                  &trans                   &msc SCRL_LEFT          &kp PRINTSCREEN  &msc SCRL_RIGHT          &trans          &kp UNDER        &kp NUBS  &kp PRINTSCREEN  &trans          &trans          &trans           &trans   &trans
-                                                 &kp LG(LC(LEFT_ARROW))  &trans           &kp LG(LC(RIGHT_ARROW))  &kp LG(SPACE)   &kp LG(SPACE)    &trans    &kp DELETE       &mo 3           &kp N0          &trans
+                                                 &kp LG(LC(LEFT_ARROW))  &trans           &kp LG(LC(RIGHT_ARROW))  &kp LG(SPACE)   &kp LG(SPACE)    &trans    &kp DELETE       &mo 4           &kp N0          &trans
             >;
 
             display-name = "Nav";
@@ -95,7 +114,7 @@
 &trans  &trans    &kp LT    &kp EQUAL  &kp GT    &kp GRAVE                    &trans     &kp LBKT  &kp UNDER  &kp RBKT  &trans    &trans
 &trans  &kp BSLH  &kp LPAR  &kp MINUS  &kp RPAR  &kp PLUS                     &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &trans
 &trans  &trans    &kp STAR  &kp COLON  &kp FSLH  &trans     &trans    &trans  &trans     &kp PIPE  &kp TILDE  &kp AMPS  &trans    &trans
-                  &trans    &mo 3      &trans    &mo 3      &trans    &trans  &trans     &trans    &trans     &trans
+                  &trans    &mo 4      &trans    &trans     &trans    &trans  &trans     &trans    &trans     &trans
             >;
 
             display-name = "Symbols";
@@ -111,25 +130,6 @@
             >;
 
             display-name = "Adjust";
-        };
-
-        game {
-            display-name = "Base";
-            bindings = <
-&kp ESC    &kp N1  &kp N2    &kp N3  &kp N4     &kp N5                             &kp N6    &kp N7  &kp N8     &kp N9     &kp N0    &kp RIGHT_BRACKET
-&kp TAB    &kp Q   &kp W     &kp E   &kp R      &kp T                              &kp Y     &kp U   &kp I      &kp O      &kp P     &kp LEFT_BRACKET
-&kp LCTRL  &kp A   &kp S     &kp D   &kp F      &kp G                              &kp H     &kp J   &kp K      &kp L      &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X     &kp C   &kp V      &kp B      &kp MINUS    &kp GRAVE  &kp N     &kp M   &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
-                   &kp LGUI  &mo 1   &kp LCTRL  &kp SPACE  &kp SPACE    &kp ENTER  &kp BSPC  &mo 2   &kp MINUS  &kp EQUAL
-            >;
-
-            sensor-bindings =
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>,
-                <&enc_vol>;
         };
     };
 };
