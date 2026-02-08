@@ -17,7 +17,7 @@
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             require-prior-idle-ms = <100>;
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
@@ -29,7 +29,7 @@
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             require-prior-idle-ms = <100>;
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
@@ -58,11 +58,11 @@
 
         base {
             bindings = <
-&kp ESC    &kp N1               &kp N2           &kp N3           &kp N4             &kp N5                             &kp N6    &kp N7              &kp N8            &kp N9            &kp N0           &kp RIGHT_BRACKET
-&kp TAB    &kp Q                &kp W            &kp E            &kp R              &kp T                              &kp Y     &kp U               &kp I             &kp O             &kp P            &kp LEFT_BRACKET
-&kp LCTRL  &hml LEFT_CONTROL A  &hml LEFT_ALT S  &hml LEFT_WIN D  &hml LEFT_SHIFT F  &kp G                              &kp H     &hmr RIGHT_SHIFT J  &hmr LEFT_META K  &hmr RIGHT_ALT L  &hmr RCTRL SEMI  &kp SQT
-&kp LSHFT  &kp Z                &kp X            &kp C            &kp V              &kp B      &kp MINUS    &kp GRAVE  &kp N     &kp M               &kp COMMA         &kp DOT           &kp FSLH         &kp RSHFT
-                                &kp LGUI         &mo 2            &kp LCTRL          &kp SPACE  &kp SPACE    &kp ENTER  &kp BSPC  &mo 3               &kp PIPE          &kp EQUAL
+&kp ESC    &kp N1              &kp N2          &kp N3          &kp N4            &kp N5                             &kp N6    &kp N7             &kp N8           &kp N9           &kp N0          &kp RIGHT_BRACKET
+&kp TAB    &kp Q               &kp W           &kp E           &kp R             &kp T                              &kp Y     &kp U              &kp I            &kp O            &kp P           &kp LEFT_BRACKET
+&kp LCTRL  &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_WIN D  &mt LEFT_SHIFT F  &kp G                              &kp H     &mt RIGHT_SHIFT J  &mt LEFT_META K  &mt RIGHT_ALT L  &mt RCTRL SEMI  &kp SQT
+&kp LSHFT  &kp Z               &kp X           &kp C           &kp V             &kp B      &kp MINUS    &kp GRAVE  &kp N     &kp M              &kp COMMA        &kp DOT          &kp FSLH        &kp RSHFT
+                               &kp LGUI        &mo 2           &kp LCTRL         &kp SPACE  &kp SPACE    &kp ENTER  &kp BSPC  &mo 3              &kp PIPE         &kp EQUAL
             >;
 
             display-name = "Base";
