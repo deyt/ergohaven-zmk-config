@@ -24,9 +24,6 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <31 32 33 34>;
-            hold-trigger-on-release;
-            hold-while-undecided;
-            hold-while-undecided-linger;
         };
 
         hmr: home_row_mod_right {
@@ -39,9 +36,6 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <28 27 26 25>;
-            hold-trigger-on-release;
-            hold-while-undecided;
-            hold-while-undecided-linger;
         };
     };
 
